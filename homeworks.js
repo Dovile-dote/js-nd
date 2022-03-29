@@ -233,9 +233,24 @@ if (pirmoTekstoIlgis == antroTekstoIlgis) {
     console.log('Bandykite kita karta');
 }
 
-//  3 d 
+// 3 d 
 if (pirmoTekstoIlgis != antroTekstoIlgis) {
     console.log('Pomidoras');
 } else {
     console.log('Bandykite dar karta');
 }
+
+// 4
+console.log(pirmasTekstuMasyvas[0].length, pirmasTekstuMasyvas[1].length, pirmasTekstuMasyvas[2].length, pirmasTekstuMasyvas[3].length, pirmasTekstuMasyvas[4].length);
+
+// 5 a
+const length = pirmasTekstuMasyvas.length;
+let ilgiausias = pirmasTekstuMasyvas[0].length;
+let ilgiausiasZodis = 'blablabla'; 
+
+for (var i = 0; i < length; i++) {
+    if (ilgiausias < pirmasTekstuMasyvas[i].length)
+    ilgiausias = pirmasTekstuMasyvas[i].length;
+    ilgiausiasZodis = pirmasTekstuMasyvas[i];
+}
+console.log(ilgiausiasZodis);
