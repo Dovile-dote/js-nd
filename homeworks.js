@@ -1,13 +1,13 @@
 // Kintamuju inicijavimas
 
 // 1
-const pirmasSkaicius = 32;
+const pirmasSkaicius = 16;
 console.log(pirmasSkaicius);
 
 const antrasSkaicius = 74;
 console.log(antrasSkaicius);
 
-const treciasSkaicius = 6;
+const treciasSkaicius = 9;
 console.log(treciasSkaicius);
 
 // 2
@@ -65,3 +65,177 @@ console.log('Trecio skaiciu masyvo matematiniu veiksmu rexultatas: ', trecioSkai
 
 const tekstiniaiMasyvai = pirmasTekstuMasyvas + ', ' + antrasTekstuMasyvas + ', ' + treciasTekstuMasyvas;
 console.log(tekstiniaiMasyvai);
+
+// Kintamuju palyginimas
+// 1 a
+
+if (pirmasSkaicius > antrasSkaicius) {
+    console.log('pirmas skaicius didesnis uz antra');
+} else {
+    console.log('antras skaicius didesnis uz pirma');
+}
+
+if (antrasSkaicius > treciasSkaicius) {
+    console.log('antras skaicius didesnis uz trecia');
+} else {
+    console.log('trecias skaicius didesnis uz antra')
+}
+
+if (pirmasSkaicius > treciasSkaicius) {
+    console.log('pirmas skaicius didesnis uz trecia');
+} else {
+    console.log('trecias skaicius didesnis uz pirma');
+}
+
+// 1 a
+if (pirmasSkaicius > antrasSkaicius && pirmasSkaicius > treciasSkaicius) {
+    console.log('pirmas skaicius didziausias');
+} else if (antrasSkaicius > pirmasSkaicius && antrasSkaicius > treciasSkaicius) {
+    console.log('antras skaicius didziausias')
+} else if (treciasSkaicius > pirmasSkaicius && treciasSkaicius > antrasSkaicius) {
+    console.log('trecias skaicius didziausias');
+} else {
+    console.log('pasitikrinkite ar visi skaiciai skirtingi')
+}
+
+// 1 b 
+if (pirmasSkaicius < antrasSkaicius) {
+    console.log('pirmas skaicius mazesnis uz antra');
+} else {
+    console.log('antras skaicius mazesnis uz pirma');
+}
+
+if (antrasSkaicius < treciasSkaicius) {
+    console.log('antras skaicius mazesnis uz trecia');
+} else {
+    console.log('trecias skaicius mazesesnis uz antra')
+}
+
+if (pirmasSkaicius < treciasSkaicius) {
+    console.log('pirmas skaicius mazesnis uz trecia');
+} else {
+    console.log('trecias skaicius mazesnis uz pirma');
+}
+
+// 1 c
+if (pirmasSkaicius == antrasSkaicius) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (antrasSkaicius == treciasSkaicius) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmasSkaicius == treciasSkaicius) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+// 1 d
+if (pirmasSkaicius != antrasSkaicius) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (antrasSkaicius != treciasSkaicius) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+if (pirmasSkaicius != treciasSkaicius) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+// 1 e
+if (pirmasSkaicius >= antrasSkaicius) {
+    console.log('Pirmas skaicius didesnis arba lygus');
+} else {
+    console.log('Antras skaicius didesnis');
+}
+
+if (antrasSkaicius >= treciasSkaicius) {
+    console.log('Antras skaicius didesnis arba lygus treciam');
+} else {
+    console.log('Trecias skaicius didesnis');
+}
+
+if (treciasSkaicius >= pirmasSkaicius) {
+    console.log('Trecias skaicius didesnis arba lygus pirmam');
+} else {
+    console.log('Pirmas skaicius didesnis')
+}
+
+// 1 e
+if (pirmasSkaicius >= antrasSkaicius && pirmasSkaicius >= treciasSkaicius) {
+    console.log('pirmas skaicius didziausias arba lygus');
+} else if (antrasSkaicius >= pirmasSkaicius && antrasSkaicius >= treciasSkaicius) {
+    console.log('antras skaicius didziausias arba lygus');
+} else if (treciasSkaicius >= pirmasSkaicius && treciasSkaicius >= antrasSkaicius) {
+    console.log('trecias skaicius didziausias arba lygus');
+} else {
+    console.log('ar tikrai ivedete skaicius?');
+}
+
+// 1 f
+
+if (pirmasSkaicius <= antrasSkaicius) {
+    console.log('Pirmas skaicius mazesnis arba lygus');
+} else {
+    console.log('Antras skaicius mazesnis');
+}
+
+if (antrasSkaicius <= treciasSkaicius) {
+    console.log('Antras skaicius mazesnis arba lygus treciam');
+} else {
+    console.log('Trecias skaicius mazesis');
+}
+
+if (treciasSkaicius <= pirmasSkaicius) {
+    console.log('Trecias skaicius mazesnis arba lygus pirmam');
+} else {
+    console.log('Pirmas skaicius mazesnis')
+}
+
+// 2
+const pirmoTekstoIlgis = pirmasTekstas.length;
+const antroTekstoIlgis = antrasTekstas.length;
+const trecioTekstoIlgid = treciasTekstas.length;
+
+// 3 a
+
+if (pirmoTekstoIlgis > antroTekstoIlgis) {
+    console.log('pirmas zodis ilgesnis');
+} else {
+    console.log('zodziu ilgis vienodas arba antras ilgesnis');
+}
+
+// 3 b
+
+if (pirmoTekstoIlgis < antroTekstoIlgis) {
+    console.log('pirmas zodis trumpesnis');
+} else {
+    console.log('zodziu ilgis vienodas arba antras trumpesnis')
+}
+
+// 3 c
+if (pirmoTekstoIlgis == antroTekstoIlgis) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite kita karta');
+}
+
+//  3 d 
+if (pirmoTekstoIlgis != antroTekstoIlgis) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
