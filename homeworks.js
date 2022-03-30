@@ -32,13 +32,13 @@ console.log(treciasSkaiciuMasyvas);
 
 // 4
 
-const pirmasTekstuMasyvas = ['suo', ' karve', ' kate', ' vista', ' kiaule'];
+const pirmasTekstuMasyvas = ['suo', 'karve', 'kate', 'vista', 'kiaule'];
 console.log(pirmasTekstuMasyvas);
 
-const antrasTekstuMasyvas = ['kiausinis', ' duona', ' sviestas', ' suris', ' desra'];
+const antrasTekstuMasyvas = ['kiausinis', 'duona', 'sviestas', 'suris', 'desra'];
 console.log(antrasTekstuMasyvas);
 
-const treciasTekstuMasyvas = ['akmuo', ' vanduo', ' vejas', ' ugnis', ' medis'];
+const treciasTekstuMasyvas = ['akmuo', 'vanduo', 'vejas', 'ugnis', 'medis'];
 console.log(treciasTekstuMasyvas);
 
 // Veiksmai su Kintamaisiais
@@ -61,7 +61,9 @@ console.log('Antro skaiciu masyvo matematiniu veiksmu rezultatas: ', antroSkaici
 
 const trecioSkaiciuMasyvoSuma = treciasSkaiciuMasyvas[0] - treciasSkaiciuMasyvas[1] +
 treciasSkaiciuMasyvas[2] - treciasSkaiciuMasyvas[3] + treciasSkaiciuMasyvas[4];
-console.log('Trecio skaiciu masyvo matematiniu veiksmu rexultatas: ', trecioSkaiciuMasyvoSuma);
+console.log('Trecio skaiciu masyvo matematiniu veiksmu rezultatas: ', trecioSkaiciuMasyvoSuma);
+
+// 4
 
 const tekstiniaiMasyvai = pirmasTekstuMasyvas + ', ' + antrasTekstuMasyvas + ', ' + treciasTekstuMasyvas;
 console.log(tekstiniaiMasyvai);
@@ -227,6 +229,7 @@ if (pirmoTekstoIlgis < antroTekstoIlgis) {
 }
 
 // 3 c
+
 if (pirmoTekstoIlgis == antroTekstoIlgis) {
     console.log('Pomidoras');
 } else {
@@ -234,6 +237,7 @@ if (pirmoTekstoIlgis == antroTekstoIlgis) {
 }
 
 // 3 d 
+
 if (pirmoTekstoIlgis != antroTekstoIlgis) {
     console.log('Pomidoras');
 } else {
@@ -241,9 +245,19 @@ if (pirmoTekstoIlgis != antroTekstoIlgis) {
 }
 
 // 4
+
 console.log(pirmasTekstuMasyvas[0].length, pirmasTekstuMasyvas[1].length, pirmasTekstuMasyvas[2].length, pirmasTekstuMasyvas[3].length, pirmasTekstuMasyvas[4].length);
 
 // 5 a
+
+if (pirmasTekstuMasyvas[0].length > pirmasTekstuMasyvas[1].length) {
+    console.log('Pomidoras');
+} else {
+    console.log('bandykite kita karta');
+};
+ 
+// 5 a
+
 const length = pirmasTekstuMasyvas.length;
 let ilgiausias = pirmasTekstuMasyvas[0].length;
 let ilgiausiasZodis = 'blablabla'; 
@@ -254,3 +268,45 @@ for (var i = 0; i < length; i++) {
     ilgiausiasZodis = pirmasTekstuMasyvas[i];
 }
 console.log(ilgiausiasZodis);
+
+// 5 b
+
+if (antrasTekstuMasyvas[4].length < antrasTekstuMasyvas[0].length) {
+    console.log('pomidoras');
+} else {
+    console.log('bandyk is naujo');
+}
+
+// 5 c
+
+if (treciasTekstuMasyvas[0].length == treciasTekstuMasyvas[4].length) {
+    console.log('ilgis vienodas');
+} else {
+    console.log('skirtingas ilgis');
+}
+
+// 5 d 
+
+if (treciasTekstuMasyvas[0].length != treciasTekstuMasyvas[4].length) {
+    console.log('skirtingas ilgis. pomidoras');
+} else {
+    console.log('ilgis vienodas. Bandyk dar karta.')
+}
+
+// 5 e
+
+if (treciasTekstuMasyvas[0].length >= treciasTekstuMasyvas[4].length) {
+    console.log('pomidoras');
+} else {
+    console.log('bandyk kita karta');
+}
+
+// 5 f
+
+if (treciasTekstuMasyvas[0].length <= treciasTekstuMasyvas[4].length) {
+    console.log('pomidoras');
+} else {
+    console.log('bandyk kita karta');
+}
+
+// Ciklo for panaudojimas
