@@ -2,10 +2,10 @@
 
 // 1
 
-let n = 20;
+let n = 0;
 if (n < 0) {
     console.log('Blogas');
-} else {
+} else if (n > 0) {
     console.log('Geras');
 }
 
@@ -23,10 +23,10 @@ if (n === 1) {
 // 3
 
 let d = 3;
-let k = 18;
+let k = 15;
 n = 5;
 
-if (k/n < d) {
+if (k/n <= d) {
     console.log('Knygos telpa i dezes');
 } else {
     console.log('Knygos netelpa i dezes');
@@ -50,15 +50,15 @@ if (a > b) {
 let c = 50;
 let p = 20;
 k = Math.floor(c / p);
-m = c - p * k;
+m = c % p;
 console.log('Saulius gali nusipirkti ' + k + ' porcijas ledu ir jam liks ' + m + ' centu.');
-console.log(`Saulius gali nusipirkti ${k} porcijas ledu ir jam liks ${m} centu grazos.`)
+
 
 // 6
 
 n = 6;
 
-if (n % 2 === 0) {
+if (n % 3 === 0) {
     console.log('Trikampi sudelioti galima.');
 } else {
     console.log('Trikampio sudelioti negalima.');
@@ -87,7 +87,7 @@ if (k % 2 === 0) {
 
 // 9
 
-m = 1904;
+m = 1900;
 
 console.log(m)
 
