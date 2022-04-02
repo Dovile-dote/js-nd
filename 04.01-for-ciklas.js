@@ -30,7 +30,11 @@ for (let i = 0; i < 5; i++) {
 
 console.log('-----5-----');
 
-// nesuprantu salygos
+skaicius = 0;
+for(let i = 0; i < 5; i++) {
+    console.log(skaicius);
+    skaicius = Math.floor(Math.random() * 11);
+}
 
 console.log('-----6-----');
 
