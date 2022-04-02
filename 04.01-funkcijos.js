@@ -29,10 +29,35 @@ patikrinimas = palyginimas(-10, -10);
 console.log(patikrinimas);
 
 console.log('-----3-----');
+
 console.log('-----4-----');
+
+function kvadratas(x) {
+    return `${x} pakelus kvadratu gausime: ${x ** 2}`;
+}
+
+patikrinimas = kvadratas(9);
+console.log(patikrinimas);
+
 console.log('-----5-----');
 console.log('-----6-----');
 console.log('-----7-----');
+
+// function onlyText(tekstas) {
+//     if(tekstas !== NaN) {
+//         return `tai ne tekstas!`
+//     } else {
+//         return `${tekstas} - tekstas turi ${tekstas.length} simboliu.`
+//     }
+// }
+// let abc = "kazkur kazkas kazkam";
+// patikrinimas = onlyText(abc);
+// console.log(patikrinimas);
+
+// abc = 7;
+// patikrinimas = onlyText(abc);
+// console.log(patikrinimas);
+
 console.log('-----8-----');
 
 function telefonoNumeris(skaiciai) {
