@@ -37,4 +37,46 @@ console.log(skaitmenuKiekisSkaiciuje(NaN));
 
 console.log('-----4-----');
 
-function didziausiaiSkaiciusSarase(x) {}
+function didziausiaisSkaiciusSarase(sarasas) {
+    if (Array.isArray(sarasas) === false) {
+        return `Pateikta netinkamo tipo reiksme`;
+    } else if (sarasas.length === 0) {
+        return `Pateiktas sarasas negali buti tuscias.`;
+    } else {
+        let didziausias = sarasas[0];
+        for (let i = 0; i < sarasas.length; i++) {
+            if (didziausias < sarasas[i]) {
+                didziausias = sarasas[i];
+            }
+        }
+        return `Didziausias skaicius: ${didziausias}`
+    }
+}
+
+let x = [1];
+let atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);
+
+x = [1, 2, 3];
+atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);
+
+x = [-5, 78, 14, 0, 18];
+atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);
+
+x = [69, 69, 69, 69, 66];
+atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);
+
+x = [-1, -2, -3, -4, -5, -6, -7, -8];
+atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);
+
+x = "pomidoras";
+atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);
+
+x = [];
+atsakymas = didziausiaisSkaiciusSarase(x);
+console.log(atsakymas);

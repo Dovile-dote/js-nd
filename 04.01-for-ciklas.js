@@ -49,7 +49,7 @@ let daugiklis = 0;
 for (let i = 0; i < 10; i++) {
     daugiklis++;
     let rezultatas = ivestasSkaicius * daugiklis;
-    console.log(rezultatas)
+    console.log(rezultatas);
 }
 
 console.log('-----8-----');
