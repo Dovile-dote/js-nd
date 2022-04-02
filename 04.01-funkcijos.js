@@ -44,24 +44,27 @@ console.log('-----6-----');
 console.log('-----7-----');
 
 // function onlyText(tekstas) {
-//     if(tekstas !== NaN) {
-//         return `tai ne tekstas!`
+//     if (String.isString(tekstas) === true) {
+//  return `${tekstas} - tekstas turi ${tekstas.length} simboliu.`
 //     } else {
-//         return `${tekstas} - tekstas turi ${tekstas.length} simboliu.`
+//  return `tai ne tekstas!`
 //     }
 // }
-// let abc = "kazkur kazkas kazkam";
+let abc = 'kazkur kazkas kazkam';
+console.log(typeof(abc));
 // patikrinimas = onlyText(abc);
 // console.log(patikrinimas);
 
-// abc = 7;
+abc = 7;
+console.log(typeof(abc));
 // patikrinimas = onlyText(abc);
 // console.log(patikrinimas);
+
 
 console.log('-----8-----');
 
 function telefonoNumeris(skaiciai) {
-    if (Array.isArray(skaiciai)===true) {
+    if (Array.isArray(skaiciai) === true) {
         if (skaiciai.length === 10) {
             return `(${skaiciai[0]} ${skaiciai[1]} ${skaiciai[2]}) ${skaiciai[3]} ${skaiciai[4]} ${skaiciai[5]} - ${skaiciai[6]} ${skaiciai[7]} ${skaiciai[8]} ${skaiciai[9]}`;
         } else if (skaiciai.length < 10) {

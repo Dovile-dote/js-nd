@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./04.01-funkcijos.js",
+    "dev": "nodemon ./04.01-for-ciklas.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

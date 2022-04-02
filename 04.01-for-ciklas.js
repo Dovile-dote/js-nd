@@ -65,3 +65,12 @@ for (let i = 0; i < n; i++) {
 }
 
 console.log('-----9-----');
+
+let indelis = 100;
+let palukanos = indelis * 2 / 100;
+n = 10; 
+for (let i = 1; i < n + 1; i++) {
+    indelis += palukanos;
+    palukanos = indelis * 2/ 100;
+    console.log(`${i}-ais metais palukanos bus ${palukanos.toFixed(2)}, indelis- ${indelis.toFixed(2)}`);
+}
