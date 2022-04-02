@@ -35,9 +35,11 @@ if (k/n <= d) {
 // 4
 
 let a = 100;
-let b = 9;
+let b = 10;
 
-if (a > b) {
+if (a===b){
+    console.log('Skaiciu kombinacija negalima');
+} else if (a > b) {
     console.log(--a);
     console.log(++b);
 } else {
@@ -66,15 +68,19 @@ if (n % 3 === 0) {
 
 // 7
 
-n = 2;
-if (n === 2) {
-    d = 28;
-} else if (n % 2 === 0) {
-    d = 30;
-} else {
-    d = 31;
-}
-console.log('Sis menuo turi ' + d + ' dienu.');
+n = 3;
+if (n > 0 && n <= 12) {
+    if (n === 2) {
+        d = 28;
+    } else if (n % 2 === 0 && n < 7 || n === 9 || n=== 11) {
+        d = 30;
+    } else {
+        d = 31;
+    }
+    console.log('Sis menuo turi ' + d + ' dienu.');
+    } else {
+        console.log('Tokio menesio nera.')
+    }
 
 // 8
 
