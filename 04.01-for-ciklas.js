@@ -61,7 +61,7 @@ let n = 10;
 for (let i = 0; i < n; i++) {
     ++colis; 
     centimetrai = colis * 2.54; 
-    console.log(`${colis} colis\\iai turi ${centimetrai} centimetra\\u`);
+    console.log(`${colis} colis\\iai\\iu turi ${centimetrai} centimetra\\u\\us`);
 }
 
 console.log('-----9-----');
