@@ -85,7 +85,8 @@ let metai = 0;
 let era = 2022;
 
 for (let i = 0; i < 8; i++) {
-      if(metai % 4 === 0  && metai < era || metai % 400 === 0) {
+    // cia i < 8 turetu buti i <= era !!!
+      if((metai % 4 === 0 || metai % 400 === 0) && metai < era) {
         console.log(`Keliamieji metai ${metai}`)
         } else {
         // console.log('metai iprasti');
