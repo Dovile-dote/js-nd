@@ -30,6 +30,18 @@ console.log(patikrinimas);
 
 console.log('-----3-----');
 
+function keliamiejiMetai(metai) {
+    if(metai % 4 === 0 && metai > 0) {
+        return `${metai} yra keliamieji metai.`;
+    }
+    else {
+        return `${metai} nera keliamieji metai.`;
+    }
+}
+m = 15;
+patikrinimas = keliamiejiMetai(m);
+console.log(patikrinimas);
+
 console.log('-----4-----');
 
 function kvadratas(x) {
@@ -40,8 +52,49 @@ patikrinimas = kvadratas(9);
 console.log(patikrinimas);
 
 console.log('-----5-----');
+
+
+function skaiciuSuma(sk) {
+    if(sk > 1) {
+        let ats = 0;
+        for(let i = 1; i <= sk; i++) {
+            ats = ats + i;
+        }
+            return `nuo 0 iki ${sk} skaiciu suma lygi ${ats} `
+    } else {
+        return `pasirinkite didesni skaiciu!`
+    }
+}
+
+let ska = 3;
+patikrinimas = skaiciuSuma(ska);
+console.log(patikrinimas);
+
+ska = -6;
+patikrinimas = skaiciuSuma(ska);
+console.log(patikrinimas);
+
+
 console.log('-----6-----');
+
+skaicius = 20;
+kiekSveiku = -1;
+for(let i = 0; i < skaicius; i++) {
+    if(skaicius % i === 0){
+        kiekSveiku++;
+    }
+    
+}console.log(kiekSveiku);
+
 console.log('-----7-----');
+
+function textLength(text) {
+    return `"${text}" - tekstas turi ${text.length} simboliu.`
+}
+
+let abc = 'kazkur kazkas kazkam';
+patikrinimas = textLength(abc);
+console.log(patikrinimas);
 
 // function onlyText(tekstas) {
 //     if (String.isString(tekstas) === true) {
@@ -50,13 +103,13 @@ console.log('-----7-----');
 //  return `tai ne tekstas!`
 //     }
 // }
-let abc = 'kazkur kazkas kazkam';
-console.log(typeof(abc));
+// let abc = 'kazkur kazkas kazkam';
+// console.log(typeof(abc));
 // patikrinimas = onlyText(abc);
 // console.log(patikrinimas);
 
-abc = 7;
-console.log(typeof(abc));
+// abc = 7;
+// console.log(typeof(abc));
 // patikrinimas = onlyText(abc);
 // console.log(patikrinimas);
 
@@ -121,3 +174,16 @@ patikrinimas = tekstuPalyginimas(a, b);
 console.log(patikrinimas);
 
 console.log('-----10-----');
+
+function suskaiciuokA(tekstas) {
+    let atskirosRaides = tekstas.split("");
+    let kiekRaidziu = 0;
+    for(let i = 0; i < tekstas.length; i++) {
+        if (atskirosRaides[i] === 'a') {
+           kiekRaidziu ++;
+         }
+    } 
+    return `Siame tekste yra ${kiekRaidziu} "a" raidziu.`
+}
+patikrinimas = suskaiciuokA(b);
+console.log(patikrinimas);

@@ -78,3 +78,17 @@ for (let i = 1; i < n + 1; i++) {
     palukanos = indelis * 2/ 100;
     console.log(`${i}-ais metais palukanos bus ${palukanos.toFixed(2)}, indelis- ${indelis.toFixed(2)}`);
 }
+
+console.log("-----10-----");
+
+let metai = 0;
+let era = 2022;
+
+for (let i = 0; i < 8; i++) {
+      if(metai % 4 === 0  && metai < era || metai % 400 === 0) {
+        console.log(`Keliamieji metai ${metai}`)
+        } else {
+        // console.log('metai iprasti');
+    } 
+    metai++;
+}
