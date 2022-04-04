@@ -73,6 +73,44 @@ const reverseText = splitText.reverse();
 const result = reverseText.join('');
 console.log(result);
 
+function reverseString(text) {
+    const a = text.length - 1;
+    let reverse = '';
+
+    for (let i = 0; i < text.length; i++) {
+        const position = text.length - 1 - i;
+        const letter = text[position];
+        reverse += letter;
+    }   
+
+    return reverse;
+}
+
+console.log(reverseString ('abc'), '-->', 'cba');
+console.log(reverseString('sula'), '-->', 'alus');
+
+function resverseString2(text) {
+    let reverse = '';
+
+    for (let i = 0; i < text.length; i++) {
+        reverse = text[i] + reverse;
+    }
+    return reverse;
+}
+
+console.log(resverseString2('labas'), '-->', 'sabal');
+
+function reverseString3(text) {
+    let reverse = '';
+
+    for (let i = text.length - 1; i >= 0; i--) {
+        reverse += text[i];
+    }
+    return reverse;
+}
+
+console.log(reverseString3('abcdef'), '-->', 'fedcba');
+
 // 3a
 console.log('---3a---');
 
@@ -153,3 +191,20 @@ for (let i = -18; i <= 18; i++) {
     }
 }  
 console.log(`Skaiciu intervale tarp -18 ir 18, besidalijanciu be liekanos is 3 yra ${atsakymas} vienetai.`);
+
+console.log('----------');
+
+function liekana(nuo, iki, daliklis) {
+let count = 0;
+
+for (let i = nuo; i <= iki; i++) {
+    if(i % daliklis === 0) {
+        count++;
+    }
+}
+    return `Skaiciu intervale tarp ${nuo} ir ${iki}, besidalijanciu be liekanos is ${daliklis} yra ${count} vienetai.`
+}
+
+console.log(liekana(0, 11, 3));
+console.log(liekana(0, 11, 5));
+console.log(liekana(0, 11, 7));

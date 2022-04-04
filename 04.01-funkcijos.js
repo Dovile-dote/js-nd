@@ -88,30 +88,28 @@ for(let i = 0; i < skaicius; i++) {
 
 console.log('-----7-----');
 
-function textLength(text) {
-    return `"${text}" - tekstas turi ${text.length} simboliu.`
-}
+// function textLength(text) {
+//     return `"${text}" - tekstas turi ${text.length} simboliu.`
+// }
 
-let abc = 'kazkur kazkas kazkam';
-patikrinimas = textLength(abc);
+// let abc = 'kazkur kazkas kazkam';
+// patikrinimas = textLength(abc);
+// console.log(patikrinimas);
+
+function onlyText(tekstas) {
+    if (typeof tekstas !== 'string') {
+    return `tai ne tekstas!`
+    } else {
+    return `${tekstas} - tekstas turi ${tekstas.length} simboliu.`
+    }
+}
+abc = 'kazkur kazkas kazkam';
+patikrinimas = onlyText(abc);
 console.log(patikrinimas);
 
-// function onlyText(tekstas) {
-//     if (String.isString(tekstas) === true) {
-//  return `${tekstas} - tekstas turi ${tekstas.length} simboliu.`
-//     } else {
-//  return `tai ne tekstas!`
-//     }
-// }
-// let abc = 'kazkur kazkas kazkam';
-// console.log(typeof(abc));
-// patikrinimas = onlyText(abc);
-// console.log(patikrinimas);
-
-// abc = 7;
-// console.log(typeof(abc));
-// patikrinimas = onlyText(abc);
-// console.log(patikrinimas);
+abc = 7;
+patikrinimas = onlyText(abc);
+console.log(patikrinimas);
 
 
 console.log('-----8-----');
