@@ -77,14 +77,24 @@ console.log(patikrinimas);
 
 console.log('-----6-----');
 
-skaicius = 20;
+skaicius = -20;
+if (skaicius > 0) {
 kiekSveiku = -1;
 for(let i = 0; i < skaicius; i++) {
     if(skaicius % i === 0){
         kiekSveiku++;
     }
-    
-}console.log(kiekSveiku);
+}
+// console.log(kiekSveiku);
+} else {
+    kiekSveiku = 0;
+    for(let i = skaicius; i <= 0; i++) {
+        if(skaicius % i === 0 && i !== skaicius && i !== -1){
+            kiekSveiku++
+        }
+    }
+    console.log(kiekSveiku);
+}
 
 console.log('-----7-----');
 
