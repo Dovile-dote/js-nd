@@ -4,10 +4,20 @@
 console.log('---1a---');
 let suma = 0;
 
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i <= 0; i++) {
     suma += i;
     console.log(suma);
 }
+
+function sumaIntervale(nuo, iki) {
+    let suma = 0;
+    for (let i = nuo; i <= iki; i++) {
+        suma += i;
+    }
+    return suma;
+}
+
+console.log(sumaIntervale(0,0), '-->', 0);
 
 // 1 b
 console.log('---1b---');
