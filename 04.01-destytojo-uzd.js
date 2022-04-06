@@ -167,4 +167,4 @@ console.log(bigNum([1, 2, 'x', 3]), '-->', 3);
 console.log(bigNum([1, 'x', 2, 3]), '-->', 3);
 console.log(bigNum(['x', 1, 2, 3]), '-->', 3);
 console.log(bigNum([x]), '-->', 'ERROR');
-console.log(bigNum(['x', true, [], -Infinity, NaN, Infinity]), '-->', 'ERROR');
+console.log(bigNum(['x', true, [], -Infinity, NaN, Infinity]), '-->','ERROR');
