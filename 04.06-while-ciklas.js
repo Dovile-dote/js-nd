@@ -32,6 +32,14 @@ console.log(`Tadas visa knyga perskaitys per ${d} dienas(-u).`);
 let vid = m / d;
 console.log(`Tadas vidutiniskai per diena perskaite ${vid.toFixed(2)} skyrius(-u).`);
 
+console.log('-----4-----');
+
+let random = 0;
+while (!(random === 5)) {
+    random = Math.floor(Math.random() * 11);
+    console.log(random);
+}
+
 console.log('-----5-----');
 
 let skaicius = 0;
