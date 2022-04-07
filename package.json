@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./04.06-while-ciklas.js",
+    "dev": "nodemon ./04.07-array.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
