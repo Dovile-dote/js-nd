@@ -12,9 +12,9 @@ console.log(suma);
 
 console.log('-----2-----');
 
-suma = Math.floor(Math.random() * 11);
+suma = 0;
 
-while (!(suma % 7 === 0)) {
+while (suma === 0 || !(suma % 7 === 0)) {
     suma += Math.floor(Math.random() * 11);
 }
 console.log(suma);
