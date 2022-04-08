@@ -85,15 +85,12 @@ console.log(sumuMasyvas);
 console.log('-----6-----')
 
 let masyvas5 = [];
-let i = 0;
+
 while (masyvas5.length < 20) {
     
     let skaicius =  10 + Math.floor(Math.random() * 41);
-    // console.log(skaicius);
-    
     if (!(masyvas5.includes(skaicius))){
-        masyvas5[i] = skaicius;
-        i += 1;
+    masyvas5.push(skaicius);
     }
 }
 console.log(masyvas5);
