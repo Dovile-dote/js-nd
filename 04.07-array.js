@@ -79,8 +79,29 @@ for (let i = 0; i < raidziuMasyvas.length; i++) {
     }
 }
 
-const sumuMasyvas = [sumaM, sumaN, sumaO, sumaP];
-console.log(sumuMasyvas);
+if (sumaM > sumaN && sumaM > sumaO && sumaM > sumaP) {
+    console.log('Raidziu masyve yra daugiausia M raidziu');
+} else if (sumaN > sumaM && sumaN > sumaO && sumaN > sumaP) {
+    console.log('Raidziu masyve yra daugiausia N raidziu');
+} else if (sumaO > sumaM && sumaO > sumaN && sumaO > sumaP) {
+    console.log('Raidziu masyve yra daugiausia O raidziu');
+} else if (sumaP > sumaM && sumaP > sumaN && sumaP > sumaO) {
+    console.log('Raidziu masyve yra daugiausia P raidziu');
+} else if (sumaM === sumaN && sumaM > sumaO && sumaM > sumaP) {
+    console.log('Raidziu masyve daugiausiai isspausdino M ir N raidziu');
+} else if (sumaM === sumaO && sumaM > sumaN && sumaM > sumaP) {
+    console.log('Raidziu masyve daugiausiai isspausdino M ir O raidziu');
+} else if (sumaM === sumaP && sumaM > sumaN && sumaM > sumaO) {
+    console.log('Raidziu masyve daugiausiai isspausdino M ir P raidziu');  
+} else if (sumaN === sumaO && sumaN > sumaM && sumaN > sumaP) {
+    console.log('Raidziu masyve daugiausiai isspausdino N ir O raidziu');
+} else if (sumaN === sumaP && sumaN > sumaM && sumaN > sumaO) {
+    console.log('Raidziu masyve daugiausiai isspausdino N ir P raidziu');
+} else if (sumaO === sumaP && sumaO > sumaM && sumaO > sumaN) {
+    console.log('Raidziu masyve daugiausiai isspausdino O ir P raidziu');
+}
+// ar reikia dar testi kas, jeigu tris reiksmes sutaps arba visu raidziu isspausdins po vienodai?
+
 
 console.log('-----6-----')
 
