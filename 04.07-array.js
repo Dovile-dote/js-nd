@@ -38,6 +38,19 @@ for (let i = 0; i < masyvas.length; i++) {
 
 console.log('-----4-----');
 
+const raid = 'DEFGH';
+const raidMasyvas = [];
+
+for (let i = 0; i < 100; i++) {
+    let raide = raid[Math.floor(Math.random() * 5)];
+    raidMasyvas[i] = raide;
+}
+
+console.log(raidMasyvas);
+console.log(raidMasyvas.length);
+
+console.log('-----5-----');
+
 const raides = 'MNOP';
 console.log(raides[3]);
 const raidziuMasyvas = [];
@@ -46,7 +59,6 @@ for (let i = 0; i < 100; i++) {
     raidziuMasyvas[i] = raide;
 }
 
-// const raidziuArray = [ M, N, O, P ]
 console.log(raidziuMasyvas);
 console.log(raidziuMasyvas.length);
 
@@ -70,10 +82,10 @@ for (let i = 0; i < raidziuMasyvas.length; i++) {
 const sumuMasyvas = [sumaM, sumaN, sumaO, sumaP];
 console.log(sumuMasyvas);
 
-console.log('-----5-----')
+console.log('-----6-----')
+
 let masyvas5 = [];
 
-console.log(masyvas5);
 for( let i = 0; i < 20; i++) {
     let skaicius =  10 + Math.floor(Math.random() * 41);
     if (!(masyvas5[i] === skaicius)) {
