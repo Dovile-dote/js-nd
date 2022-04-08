@@ -88,7 +88,7 @@ let masyvas5 = [];
 
 for( let i = 0; i < 20; i++) {
     let skaicius =  10 + Math.floor(Math.random() * 41);
-    if (!(masyvas5[i] === skaicius)) {
+    while (!(masyvas5.includes(skaicius))) {
         masyvas5[i] = skaicius;
     }
 }
